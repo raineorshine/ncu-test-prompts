@@ -1,7 +1,7 @@
 {
   "name": "ncu-test-prompts",
   "description": "A package that tests terkelg/prompts.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Raine Revere",
     "email": "raine.revere@pm.me",

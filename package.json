@@ -13,9 +13,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/raineorshine/ncu-test-prompts"
+    "url": "git+https://github.com/raineorshine/ncu-test-prompts.git"
   },
-  "bin": "bin.js",
+  "bin": {
+    "ncu-test-prompts": "bin.js"
+  },
   "dependencies": {
     "prompts": "^2.4.2"
   }

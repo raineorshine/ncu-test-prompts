@@ -1,0 +1,22 @@
+{
+  "name": "ncu-test-prompts",
+  "description": "A package that tests terkelg/prompts.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Raine Revere",
+    "email": "raine.revere@pm.me",
+    "url": "https://github.com/raineorshine"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raineorshine/ncu-test-prompts"
+  },
+  "bin": "bin.js",
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}

@@ -1,7 +1,7 @@
 const prompts = require('prompts');
 const promptsNCU = require('prompts-ncu');
 
-const fork = process.argv[2] === '--fork';
+const fork = process.argv[2] === '--raineorshine';
 
 (async () => {
   const spec = [

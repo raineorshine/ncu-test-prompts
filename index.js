@@ -1,10 +1,14 @@
 const prompts = require('prompts');
+const promptsNCU = require('prompts-ncu');
+
+const fork = process.argv[2] === '--fork';
 
 (async () => {
-  const response = await prompts([
+  const spec = [
     {
       type: 'multiselect',
       name: 'color',
+      instructions: false,
       message: 'Pick colors',
       choices: [
         { title: 'Red', value: '#ff0000' },
@@ -12,7 +16,15 @@ const prompts = require('prompts');
         { title: 'Blue', value: '#0000ff' }
       ],
     }
-  ]);
+  ]
 
-  console.log(response);
+  const url = fork 
+    ? 'raineorshine/ncu-test-prompts' 
+    : 'terkelg/prompts'
+
+  console.info('Testing ' + url)
+
+  const response = await (fork ? promptsNCU : prompts)(spec);
+
+  console.info(response);
 })();
